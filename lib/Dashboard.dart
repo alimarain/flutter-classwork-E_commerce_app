@@ -66,7 +66,7 @@ class _DashboardState extends State<Dashboard> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    popularCard("BackPack", "premium backpack easy to carry", "\$740.00", "images/bag.png"),
+                    popularCard("Nike", "Premium Shoes", "\$740.00", "images/nike.jpg"),
                     SizedBox(width: 10),
                     popularCard("Nike Air Max", "Running shoes", "\$180.00", "images/sneakers.jpg"),
                   ],

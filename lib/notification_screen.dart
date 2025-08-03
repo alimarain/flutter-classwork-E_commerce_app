@@ -3,37 +3,37 @@ import 'package:flutter/material.dart';
 class NotificationScreen extends StatelessWidget {
   final List<Map<String, String>> notifications = [
     {
-      'name': 'Kristine Jeem',
+      'name': 'owais',
       'message': 'It is a long established fact that a reader will be distracted by the readable content.',
       'time': '3 hours ago',
       'avatar': 'assets/user1.jpg'
     },
     {
-      'name': 'Key Hikes',
+      'name': 'Abdul hadi',
       'message': 'There are many variations of passages of Lorem Ipsum available.',
       'time': '2 hours ago',
       'avatar': 'assets/user2.jpg'
     },
     {
-      'name': 'Cheryl Moorti',
+      'name': 'rana azhar',
       'message': 'If you are going to use a passage of Lorem Ipsum, be sure there isn’t anything embarrassing.',
       'time': '6 hours ago',
       'avatar': 'assets/user3.jpg'
     },
     {
-      'name': 'Kristine Jeem',
+      'name': 'moazzam',
       'message': 'It is a long established fact that a reader will be distracted by this layout.',
       'time': '7 hours ago',
       'avatar': 'assets/user1.jpg'
     },
     {
-      'name': 'Key Hikes',
+      'name': 'ramish gujjar',
       'message': 'There are many variations of passages of Lorem Ipsum available.',
       'time': '8 hours ago',
       'avatar': 'assets/user2.jpg'
     },
     {
-      'name': 'Cheryl Moorti',
+      'name': 'Taimoor Ash',
       'message': 'If you are going to use a passage of Lorem Ipsum, be sure there isn’t anything embarrassing.',
       'time': '10 hours ago',
       'avatar': 'assets/user3.jpg'
