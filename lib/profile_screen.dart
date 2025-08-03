@@ -36,19 +36,19 @@ class ProfileScreen extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 35,
-                    backgroundImage: AssetImage('assets/profile.jpg'), // Replace with your image
+                    backgroundImage: AssetImage('images/face.jpg'),
                   ),
                   SizedBox(width: 16),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
                       Text(
-                        'Fscreation',
+                        'ali muhammad',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       SizedBox(height: 4),
                       Text(
-                        'fscreations441@gmail.com',
+                        'alimuhammad41@gmail.com',
                         style: TextStyle(color: Colors.grey),
                       ),
                     ],

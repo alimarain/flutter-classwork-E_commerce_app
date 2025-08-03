@@ -54,8 +54,8 @@ class _DashboardState extends State<Dashboard> {
                 mainAxisSpacing: 10,
                 physics: NeverScrollableScrollPhysics(),
                 children: [
-                  productCard("The Marc Jacobs", "Cotton tote", "\$195.00", "images/bag.png"),
-                  productCard("Axel Arigato", "Lace-up Triple sneakers", "\$245.00", "images/backpack.jpg"),
+                  productCard("The Marc Jacobs", "Cotton backpack", "\$195.00", "images/bag.png"),
+                  productCard("Tote", "Tote bags", "\$245.00", "images/backpack.jpg"),
                 ],
               ),
               const SizedBox(height: 20),
@@ -66,9 +66,9 @@ class _DashboardState extends State<Dashboard> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    popularCard("Gia Borghini", "Knee-heel Sandals", "\$740.00", "images/shoe2.png"),
+                    popularCard("BackPack", "premium backpack easy to carry", "\$740.00", "images/bag.png"),
                     SizedBox(width: 10),
-                    popularCard("Nike Air Max", "Running shoes", "\$180.00", "assets/shoes.png"),
+                    popularCard("Nike Air Max", "Running shoes", "\$180.00", "images/sneakers.jpg"),
                   ],
                 ),
               ),
@@ -99,6 +99,7 @@ class _DashboardState extends State<Dashboard> {
     } else {
       setState(() => _currentIndex = index);
     }
+    
   },
   items: const [
     BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),

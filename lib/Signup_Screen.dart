@@ -45,7 +45,7 @@ Padding(
   ),
 ),
 
-            TextField(controller: emailController, decoration: InputDecoration(labelText: 'UserName')),
+            TextField(decoration: InputDecoration(labelText: 'UserName')),
             TextField(controller: emailController, decoration: InputDecoration(labelText: 'Email')),
             TextField(controller: passController, decoration: InputDecoration(labelText: 'Password'), obscureText: true),
             SizedBox(height: 20),

@@ -72,8 +72,8 @@ class _CartScreenState extends State<CartScreen> {
               Expanded(
                 child: ListView(
                   children: [
-                    orderCard("Seludo", "Ekko Classic Lace Sneakers", "Size: 42", "Code: #1234", "\$120.00", "assets/shoes.png"),
-                    orderCard("On Ear Headphone", "Beats Solid Wireless eulok", "Size: M", "Code: #5566", "\$60.00", "assets/headphone.png"),
+                    orderCard("BackPack", "Easy To Carry", "Color:Green", "Code: #1234", "\$120.00", "images/bag.png"),
+                    orderCard("bags", "tote bags", "Quantity:4", "Code: #5566", "\$60.00", "images/backpack.jpg"),
                   ],
                 ),
               ),
