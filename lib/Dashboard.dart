@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/cart_screen.dart';
+import 'package:e_commerce_app/notification_screen.dart';
 import 'package:e_commerce_app/profile_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -76,7 +77,7 @@ class _DashboardState extends State<Dashboard> {
         ),
       ),
 
-    bottomNavigationBar: BottomNavigationBar(
+   bottomNavigationBar: BottomNavigationBar(
   currentIndex: _currentIndex,
   type: BottomNavigationBarType.fixed,
   onTap: (index) {
@@ -84,6 +85,11 @@ class _DashboardState extends State<Dashboard> {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (_) => CartScreen()),
+      );
+    } else if (index == 2) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => NotificationScreen()),
       );
     } else if (index == 3) {
       Navigator.push(
@@ -101,6 +107,7 @@ class _DashboardState extends State<Dashboard> {
     BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
   ],
 )
+
 
 
     );

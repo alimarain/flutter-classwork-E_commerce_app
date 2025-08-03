@@ -1,9 +1,24 @@
 import 'package:e_commerce_app/Signup_Success.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SignupScreen extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passController = TextEditingController();
+  signup()async{
+    try {
+  final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+    email: emailController.text,
+    password: passController.text
+  );
+} on FirebaseAuthException catch (e) {
+  if (e.code == 'user-not-found') {
+    print('No user found for that email.');
+  } else if (e.code == 'wrong-password') {
+    print('Wrong password provided for that user.');
+  }
+}
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +34,7 @@ class SignupScreen extends StatelessWidget {
               ],
             ),
 Padding(
-  padding: const EdgeInsets.only(top: 10,bottom: 10), // You can change value
+  padding: const EdgeInsets.only(top: 10,bottom: 10),
   child: Row(
     children: [
       Text(
