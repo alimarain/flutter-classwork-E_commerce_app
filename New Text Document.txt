@@ -1,0 +1,4 @@
+State management
+Get X
+Stacked
+Redux
